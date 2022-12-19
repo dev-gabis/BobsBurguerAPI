@@ -1,0 +1,39 @@
+.img {
+    width: 300px !important;
+    height: 300px  !important;
+}
+.bg-amarillo{
+    background-color: #F4E120;
+}
+.text-rojo{
+    color: #D42E2E !important;
+    font-size: 24px !important;
+    font-weight: 100% !important;
+}
+.borde-none{
+    border:none;
+}
+.borde-amarillo{
+    border-width: 3px;
+}
+.bg-white{
+background-color: white !important;
+}
+.text-rojo2{
+    color: #D42E2E !important;
+
+    font-weight: 100% !important;
+}
+.text-rojo3{
+    color: #D42E2E !important;
+   
+    font-weight: 100% !important;
+}
+.height{
+    height: 660px !important;
+    
+}
+.height2{
+    height: 760px !important;
+    
+}

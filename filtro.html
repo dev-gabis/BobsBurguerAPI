@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bobs burguer API</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-amarillo p-4" >
+      <img src="img/logo.jpg" class="img-fluid" alt="">
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav m-auto mt-2 mt-lg-0 text-center">
+              <li class="nav-item active">
+                  <a class="nav-link text-rojo mr-5" href="index.html"> <strong>Nombre</strong> </a><span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-rojo mr-5" href="filtro.html"><u><strong>Filtro</strong></u></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-rojo mr-5" href="episodios.html"><strong>Episodios</strong></a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0" id="formulario">
+            <input class="form-control mr-sm-2" id="nombre" type="text" placeholder="Search">
+            <button class="btn btn-outline-danger mr-2 my-2 my-sm-0" id="submit" type="submit">Search</button>
+            <button class="btn btn-outline-danger my-2 my-sm-0" id="todos" type="submit">Mostrar Todos</button>
+        </form>
+          
+      </div>
+  </nav>
+<div class="container mt-4">
+    <form action="" id="formulario2" class="text-center">
+      <h1 class="text-danger p-4 ">Búsqueda por filtro.</h1>
+        <label class="text-danger" class="text-danger" for="genero">Género:</label> <br>
+        <input type="text" name="genero" id="genero" placeholder="Female" class="mb-4 w-50 p-1 rounded">
+        <br>
+        <label class="text-danger" for="pelo">Color de pelo:</label> <br>
+        <input type="text" name="pelo" id="pelo" placeholder="Blonde" class="mb-4 w-50 p-1 rounded">
+        <br>
+        <label class="text-danger" for="ocupacion">Ocupacion: </label> <br>
+        <input type="text" name="ocupacion" id="ocupacion" placeholder="Student at Wagstaff School" class="mb-4 w-50 p-1 rounded">
+        <br>
+        <button type="submit" class="btn btn-outline-danger">Buscar</button>
+    </form>
+    <div class="row mt-3" id="card"></div>
+    <template id="template-card">
+            <div class="col-4 mb-3 col-lg-3">
+                <div class="card borde-amarillo bg-amarillo  height">
+                  <img class="card-img-top bg-white img img-fluid" id="img" src="" alt="" >
+                  <div class="card-body ">
+                    <h4 class="card-title"></h4>
+                    <p class="text-rojo2"><strong>Género:</strong>  <span class="card-text"></span></p>
+                    <p class="text-rojo2"><strong>Color de pelo: </strong> <span class="color-pelo"></span></p>
+                    <p class="text-rojo2"><strong>Ocupación:</strong> <span class="ocupacion"></span></p>
+                   <p class="text-rojo2"><strong>Primer Episodio:</strong> <a href="episodios.html" class="text-rojo2"></a> </p> 
+                  </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+    </template>
+        </div>
+      
+    <!-- Optional JavaScript -->
+    <script src="filtro.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
