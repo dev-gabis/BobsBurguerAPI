@@ -3,7 +3,7 @@
     height: 300px  !important;
 }
 .bg-amarillo{
-    background-color: #F4E120;
+    background-color: #20dbf4;
 }
 .text-rojo{
     color: #D42E2E !important;
@@ -15,6 +15,9 @@
 }
 .borde-amarillo{
     border-width: 3px;
+}
+.border-radius{
+    border-radius: 20px;
 }
 .bg-white{
 background-color: white !important;
